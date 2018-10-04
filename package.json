@@ -1,0 +1,19 @@
+{
+  "name": "fundamentals_forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals/issues"
+  },
+  "homepage": "https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals#readme"
+}
