@@ -21,28 +21,31 @@
         </nav>
         <div class="bottom_nav">
             <nav class="left_nav">
-                <input type="radio" name="tab" id="tab-1">
+                <input type="radio" name="tab" id="tab-1" checked>
                 <label for="tab-1">Статья</label>
                 <input type="radio" name="tab" id="tab-2">
                 <label for="tab-2">Обсуждение</label>
             </nav>
            <div></div> <!-- empty посередине-->
             <nav class="right_nav">
-                <input type="radio" name="tab" id="tab-3">
+                <input type="radio" name="tab-right" id="tab-3" checked>
                 <label for="tab-3">Читать</label>
-                <input type="radio" name="tab" id="tab-4">
+                <input type="radio" name="tab-right" id="tab-4">
                 <label for="tab-4">Править</label>
-                <input type="radio" name="tab" id="tab-5">
+                <input type="radio" name="tab-right" id="tab-5">
                 <label for="tab-5">Править код</label>
-                <input type="radio" name="tab" id="tab-6">
+                <input type="radio" name="tab-right" id="tab-6">
                 <label for="tab-6">История</label>
-                <input id="text" type="text" placeholder="Искать в Википедии">
+
+                <div class="form">
+                    <input id="text" type="text" placeholder="Искать в Википедии">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
             </nav>
-
-
             </div>
         </div>
     </div>
+    <div></div>
 </header>
 <main>
     <div class="empty"></div>
@@ -52,7 +55,10 @@
         <hr>
         <div class="small_notes">
             <div>Материал из Википедии - свободной энциклопедии</div>
-            <div>[ <a href="#">править</a> | <a href="#">править код</a> ]</div>
+            <div>
+                [<button class="edit-button">править</button> |
+                <button class="edit-button">править код</button>]
+            </div>
         </div>
         <figure>
             <img src="images/golub.jpg" alt="Голубь" width="220px" height="220px">
