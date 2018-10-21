@@ -7,7 +7,7 @@ body, html{
 header{
     height: 80px;
     display: flex;
-    background-image: linear-gradient(to top, #9ACD32, white);
+    background-image: linear-gradient(to top, #8fbfbe, white);
 }
 
 header  > div:last-child{
@@ -18,6 +18,7 @@ header  > div:last-child{
 
 .empty{
     width: 170px;
+    background: #8fbfbe;
 }
 .navigation{
     flex-grow: 1;
@@ -33,9 +34,10 @@ main{
 }
 
 footer{
-    height: 150px;
-    background-color: darkmagenta;
+    background-color: #8fbfbe;
     display: flex;
+    font-family: sans-serif;
+    font-size: 11px;
 }
 
 body{
@@ -48,7 +50,7 @@ aside{
     position: absolute;
     top: 0;
     width: 170px;
-    background-image: linear-gradient(to top, #9ACD32 90%, white);
+    background-image: linear-gradient(to top, #8fbfbe 90%, white);
     font-family: sans-serif;
     font-size: 12px;
     line-height: 18px;
@@ -151,7 +153,7 @@ aside{
     border-right: 1px solid black;
     padding-right: 5px;
     padding-left: 5px;
-    background-color: red;
+    background-image: linear-gradient(to top, #508f8d, #ceeced, #c7f2f1);
     border-bottom: 1px solid black;
 }
 .bottom_nav > div{
@@ -174,7 +176,7 @@ aside{
 }
 .right_nav .form input{
     width: 300px;
-    background-image: linear-gradient(to top, white, lightgreen);
+    background-image: linear-gradient(to top, #c7f2f1, #fff);
     border: 1px solid green;
     border-radius: 2px;
     font-size: 13px;
@@ -189,7 +191,7 @@ aside{
     position: absolute;
     top: 5px;
     right: 2px;
-    background-image: linear-gradient(to top, white, lightgreen);
+    background-image: linear-gradient(to top, #c7f2f1, #fff);
     border: none;
 }
 .main-content{
@@ -208,6 +210,7 @@ aside{
 .edit-button{
     border: none;
     background: transparent;
+    padding: 2px;
 }
 
 .edit-button:hover{
@@ -219,11 +222,12 @@ figure {
     float: right;
     margin-right: 0;
     padding: 5px 5px 5px 5px;
-    background-color: orange;
+    background-color: #8fbfbe;
 }
 figcaption{
     display: flex;
     justify-content: space-between;
+    line-height: 10px;
 }
 figure a:link{
     text-decoration: none;
@@ -255,12 +259,11 @@ figure a:hover{
     font-family: Serif;
     font-weight: normal;
     margin-bottom: 0;
+    margin-right: 5px;
     font-size: 24px;
+    display: inline-block;
 }
-.page_nav ol{
 
-    padding-left: 5px;
-}
 .page_nav li{
     margin: 5px 5px 5px 5px;
 }
@@ -291,6 +294,10 @@ figure a:hover{
 .name-block{
     background-color: cornflowerblue;
     margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .block-links p{
     font-family: sans-serif;
@@ -307,7 +314,35 @@ figure a:hover{
     padding-right: 5px;
 }
 
-footer div{
-    width: calc(100% - 170px);
-    padding: 15px 15px 15px 5px;
+.footer-content{
+    flex: 1;
+    padding: 20px;
+}
+.footer-links {
+    display: flex;
+}
+.footer-links a {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer-button img{
+    height: 40px;
+}
+
+.footer-button a{
+    display: block;
+    border: 1px solid black;
+    width: 90px ;
+    border-radius: 3px;
+    background-color: darkgrey;
+    text-align: center;
+    height: 40px;
+    margin-right: 4px;
+}
+.footer-button {
+    display: flex;
+}
+.footer-content > div{
+    display: flex;
+    justify-content: space-between;
 }
