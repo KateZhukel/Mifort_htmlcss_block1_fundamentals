@@ -2,6 +2,17 @@ body, html{
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #160ccc;
+    }
+
+a:hover{
+    text-decoration: underline;
+    color: #FF8C00;
+
 }
 
 header{
@@ -18,12 +29,10 @@ header  > div:last-child{
 
 .empty{
     width: 170px;
-    background: #8fbfbe;
 }
 .navigation{
     flex-grow: 1;
     height: 100%;
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,7 +45,6 @@ main{
 footer{
     background-color: #8fbfbe;
     display: flex;
-    font-family: sans-serif;
     font-size: 11px;
 }
 
@@ -50,8 +58,6 @@ aside{
     position: absolute;
     top: 0;
     width: 170px;
-    background-image: linear-gradient(to top, #8fbfbe 90%, white);
-    font-family: sans-serif;
     font-size: 12px;
     line-height: 18px;
 }
@@ -60,30 +66,31 @@ aside{
 }
 .logo {
     height: 160px;
-    background-image: url("images/logo.png");
-    background-repeat: no-repeat;
+    background: url("images/logo.png") no-repeat;
     background-size: contain;
-    margin: 15px 0px 0px 5px;
+    margin: 15px 0 0 5px;
 
 }
 
 .wrapper_aside ul{
     list-style-type: none;
-    padding: 0px  25px 5px 25px ;
+    padding: 0 23px 5px 25px ;
 }
-
+.fa-gear:before, .fa-cog:before{
+    margin-left: 5px;
+    font-size: 14px;
+}
 .wrapper_aside h3{
     padding-left: 25px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-weight: normal;
     font-size: 12px;
+    display: inline-block;
 }
 
 .wrapper_aside hr{
     width: 115px;
-    margin-top: 0px;
-    height: 1px;
-    background-color: #9ACD32;
+    margin-top: 0;
 }
 
 .wrapper_aside a:link{
@@ -110,20 +117,11 @@ aside{
 .person_nav li{
     margin-right: 10px;
 }
-
+.person_nav li:first-child{
+    color: #626566;
+}
 .person_nav li:last-child{
     margin-right: 0;
-}
-
-.person_nav a:link{
-    text-decoration: none;
-}
-
-.person_nav a:hover{
-    text-decoration: underline;
-}
-.person_nav a:active{
-    color: orange;
 }
 
 .person_nav .fa-user-circle-o:before{
@@ -139,8 +137,12 @@ aside{
     height: 30px;
     line-height: 30px;
     font-size: 13px;
+    color: #160ccc;
 }
-
+.bottom_nav label:hover{
+    text-decoration: underline;
+    color:#FF8C00;
+}
 .bottom_nav input:checked + label {
     background: white;
     border-bottom: none;
@@ -196,10 +198,9 @@ aside{
 }
 .main-content{
     line-height: 24px;
-    font-family: sans-serif;
     font-size: 14px;
     flex: 1;
-    padding: 0px 20px 20px 20px;
+    padding: 0 20px 20px 20px;
 }
 
 .small_notes {
@@ -211,6 +212,7 @@ aside{
     border: none;
     background: transparent;
     padding: 2px;
+    color: #ed053f;
 }
 
 .edit-button:hover{
@@ -236,6 +238,13 @@ figure a:link{
 figure a:hover{
     text-decoration: underline;
 }
+figure img{
+    width: 220px;
+    height: 220px;
+}
+code{
+    white-space: pre;
+}
 .bold{
     font-weight: bold;
 }
@@ -251,19 +260,21 @@ figure a:hover{
 }
 .main-content h1{
     font-size: 32px;
-    font-family: Serif;
+    font-family: serif;
     font-weight: normal;
     margin-bottom: 0;
 }
 .main-content h2{
-    font-family: Serif;
+    font-family: serif;
     font-weight: normal;
     margin-bottom: 0;
     margin-right: 5px;
     font-size: 24px;
     display: inline-block;
 }
-
+main .empty{
+    background-color: #8fbfbe ;
+}
 .page_nav li{
     margin: 5px 5px 5px 5px;
 }
@@ -292,20 +303,28 @@ figure a:hover{
 
 }
 .name-block{
-    background-color: cornflowerblue;
+    background-color: #edba39;
     margin: 5px;
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
     padding-left: 10px;
 }
+.name-block span{
+    font-weight: bold;
+    color: #0b4d59;
+}
+.name-block span a{
+    color: #0b4d59;
+}
+
 .block-links p{
-    font-family: sans-serif;
     font-size: 12px;
 }
 .category{
     border: 1px solid black;
     padding: 5px;
+    background-color: #8fbfbe;
 }
 
 .category a{
@@ -331,13 +350,14 @@ figure a:hover{
 
 .footer-button a{
     display: block;
-    border: 1px solid black;
     width: 90px ;
     border-radius: 3px;
-    background-color: darkgrey;
+    background-color: #c7f2f1;
     text-align: center;
     height: 40px;
     margin-right: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #777c7d;
 }
 .footer-button {
     display: flex;
