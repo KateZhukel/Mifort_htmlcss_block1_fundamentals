@@ -1,0 +1,394 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+/*ul {
+    padding: 0;
+    margin: 0;
+} */
+header{
+    height: 80px;
+    display: flex;
+}
+
+.empty{
+    width: 170px;
+    height: 100%;
+    background-image: linear-gradient(to top, #9ACD32, white);
+    border-right: 1px solid white;
+}
+.navigation{
+    background-image: linear-gradient(to top, #9ACD32, white);
+    height: 100%;
+    width: calc(100% - 170px);
+    padding: 0px 20px 0px 2px;
+    font-family: sans-serif;
+    border-bottom: 1px solid #fff ;
+}
+
+main{
+
+    background-color: darkkhaki;
+    display: flex;
+
+}
+.main-content{
+    padding: 0px 20px 20px 20px;
+    width: calc(100% - 170px);
+    border: 1px solid black;
+
+}
+footer{
+    height: 150px;
+    background-color: darkmagenta;
+    display: flex;
+}
+
+body{
+    position: relative;
+}
+
+/*styles for aside*/
+
+aside{
+    position: absolute;
+    top: 0;
+    width: 170px;
+    background-image: linear-gradient(to top, #9ACD32 90%, white);
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.wrapper_aside{
+    margin-top: 15px;
+}
+.logo {
+    height: 160px;
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 15px 0px 0px 5px;
+
+}
+
+.wrapper_aside ul{
+    list-style-type: none;
+    padding: 0px  25px 5px 25px ;
+}
+
+.wrapper_aside h3{
+    padding-left: 25px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.wrapper_aside hr{
+    width: 115px;
+    margin-top: 0px;
+    height: 1px;
+    background-color: #9ACD32;
+}
+
+.wrapper_aside a:link{
+    text-decoration:  none;
+
+}
+
+.wrapper_aside a:hover{
+    text-decoration: underline;
+}
+
+/* styles for high navigation */
+
+.person_nav{
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.person_nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.person_nav li{
+    margin-right: 10px;
+}
+
+.person_nav li:last-child{
+    margin-right: 0;
+}
+
+.person_nav a:link{
+    text-decoration: none;
+}
+
+.person_nav a:hover{
+    text-decoration: underline;
+}
+.person_nav a:active{
+    color: orange;
+}
+
+.person_nav .fa-user-circle-o:before{
+    font-size: 15px;
+    vertical-align: -1px;
+    margin-right: 3px;
+}
+
+/* styles for left_bottom_navigation */
+.bottom_nav{
+display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.bottom_nav input{
+    display: none;
+}
+
+.bottom_nav input:checked + label {
+    background: white;
+}
+
+.bottom_nav label{
+    padding: 5px 10px;
+    background-image: linear-gradient(to top, #9ACD32 60%, white);
+    box-sizing: padding-box;
+    cursor: pointer;
+}
+/*
+.bottom_nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.bottom_nav a:link{
+    text-decoration: none;
+
+}
+
+.bottom_nav li{
+    padding: 10px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.bottom_nav li:hover{
+    background-color: white;
+    border-bottom: none;
+}
+
+.bottom_nav li:last-child{
+    margin-right: 0;
+}
+.right_nav {
+    display: flex;
+}
+*/
+input[type="text"]{
+    display: inline-block;
+
+}
+
+.main-content{
+    line-height: 24px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.small_notes {
+    display: flex;
+    justify-content: space-between;
+}
+figure {
+    float: right;
+    margin-right: 0;
+    padding: 5px 5px 5px 5px;
+    background-color: orange;
+}
+figcaption{
+    display: flex;
+    justify-content: space-between;
+}
+figure a:link{
+    text-decoration: none;
+    font-size: 13px;
+}
+figure a:hover{
+    text-decoration: underline;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+
+.page_nav {
+    width: 230px;
+    line-height: 16px;
+    border: 1px solid #4B0082;
+    background-color: #eeeeee;
+}
+.main-content h1{
+    font-size: 32px;
+    font-family: Serif;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.main-content h2{
+    font-family: Serif;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.page_nav ol{
+
+    padding-left: 5px 5px 5px 5px;
+}
+.page_nav li{
+    margin: 5px 5px 5px 5px;
+}
+.page_nav p{
+    text-align: center;
+}
+.page_nav a:link {
+    font-size: 13px;
+    text-decoration: none;
+}
+.page_nav a:hover{
+    text-decoration: underline;
+}
+
+.wrapper-code{
+    background-color: #eeeeee;
+    height: 450px;
+    line-height: 18px;
+    outline: 1px solid gray;
+}
+
+.block-links{
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.name-block{
+    background-color: cornflowerblue;
+    margin: 5px;
+}
+.block-links p{
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.category{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.category a{
+    text-decoration: none;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+footer div{
+    width: calc(100% - 170px);
+    padding: 15px 15px 15px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.main_content{
+    width: 86%;
+    margin: 0px auto;
+    height: 100%;
+}
+main {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+main h1{
+    font-family: sans;
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.small_notes{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.small_notes a:link{
+    text-decoration: none;
+}
+.small_notes a:hover{
+    text-decoration: underline;
+}
+
+figure{
+    float: right;
+    padding: 5px;
+    background-color: #9ACD32;
+    margin-right: 0;
+}
+figcaption{
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+figcaption a:link{
+    text-decoration: none ;
+}
+figcaption a:hover{
+    text-decoration: underline;
+}
+section p{
+    text-align: justify;
+}
+.bold{
+    font-weight: bold;
+}
+.page_nav{
+    width: 200px;
+    background-color: #FF8C00;
+    border: 1px solid #4B0082;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.page_nav p{
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+.page_nav a:link{
+    text-decoration: none;
+}
+.page_nav a:hover{
+    text-decoration: underline;
+}
+*/
