@@ -80,6 +80,7 @@ aside{
 .fa-gear:before, .fa-cog:before{
     margin-left: 5px;
     font-size: 14px;
+
 }
 
 .wrapper_aside h3{
@@ -194,7 +195,7 @@ li.button > button{
 .right_nav .form input{
     width: 300px;
     background-image: linear-gradient(to top, #c7f2f1, #fff);
-    border: 1px solid green;
+    border: 1px solid #898c88;
     border-radius: 2px;
     font-size: 13px;
     height: 65%;
@@ -239,6 +240,7 @@ figure {
     margin-right: 0;
     padding: 5px 5px 5px 5px;
     background-color: #8fbfbe;
+    border: 1px solid #898c88;
 }
 
 figcaption{
@@ -276,7 +278,7 @@ code{
 .page_nav {
     width: 230px;
     line-height: 16px;
-    border: 1px solid #4B0082;
+    border: 1px solid #898c88;
     background-color: #e6e9ed;
 }
 
@@ -320,13 +322,13 @@ main .empty{
     background-color: #e6e9ed;
     height: 450px;
     line-height: 18px;
-    outline: 1px solid gray;
+    border: 1px solid #898c88;
 }
 
 .block-links{
-    border: 1px solid black;
     text-align: center;
     margin-bottom: 15px;
+    border: 1px solid #898c88;
 }
 
 .name-block{
@@ -352,9 +354,13 @@ main .empty{
 }
 
 .category{
-    border: 1px solid black;
+    border: 1px solid #898c88;
     padding: 5px;
     background-color: #8fbfbe;
+}
+
+.fa-search:before {
+    color: #626566;
 }
 
 .category a{
