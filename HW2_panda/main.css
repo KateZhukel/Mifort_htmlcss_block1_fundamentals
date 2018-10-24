@@ -134,7 +134,7 @@ body, html {
 .body-black{
     width: 200px;
     height: 200px;
-    border-radius:10px 111px 77px /0 117px 78px;
+    border-radius:10px 111px 77px /0  117px 78px;
     transform: rotate(46deg);
     background-color: black;
     position: absolute;
