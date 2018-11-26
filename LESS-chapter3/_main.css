@@ -1,0 +1,32 @@
+.buttons .XS {
+  line-height: 20px;
+  background-color: #e0e0e0;
+  padding: 2px 4px;
+  font-size: 10px;
+}
+.buttons .XS:hover {
+  background-color: #e8e8e8;
+  color: #ffffff;
+}
+.buttons .XM {
+  line-height: 20px;
+  background-color: #e0e0e0;
+  background-color: #3b83c0;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+.buttons .XM:hover {
+  background-color: #414ac6;
+  color: #ffffff;
+}
+.buttons .XL {
+  line-height: 20px;
+  background-color: #e0e0e0;
+  background-color: #404245;
+  padding: 10px 16px;
+  font-size: 18px;
+}
+.buttons .XL:hover {
+  background-color: #1b1c1d;
+  color: #ffffff;
+}

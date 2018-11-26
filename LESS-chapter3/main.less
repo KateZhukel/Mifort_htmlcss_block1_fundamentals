@@ -1,0 +1,50 @@
+@bg-color-default: #e0e0e0;
+@bg-blue: #3b83c0;
+@bg-hover-blue: #414ac6;
+@bg-black: #404245;
+@bg-hover-black: #1b1c1d;
+@bg-hover-grey: #e8e8e8;
+@small-padding: 2px 4px;
+@medium-padding: 6px 12px;
+@big-padding: 10px 16px;
+@color-white: #ffffff;
+@small-size: 10px;
+@medium-size: 14px;
+@big-size: 18px;
+
+.mixin(@bg-color, @font-size, @bg-hover, @font-color, @rest){
+  background-color: @bg-color;
+  padding: @rest;
+  font-size: @font-size;
+
+
+  &:hover {
+    background-color: @bg-hover;
+    color: @font-color;
+  }
+}
+
+.general-bg(){
+  line-height: 20px;
+  background-color: @bg-color-default;
+}
+
+.buttons {
+
+  .XS {
+    .general-bg;
+    .mixin(#e0e0e0, @small-size, @bg-hover-grey, @color-white, @small-padding);
+  }
+
+  .XM {
+    .general-bg;
+    .mixin(@bg-blue, @medium-size, @bg-hover-blue, @color-white, @medium-padding);
+  }
+
+  .XL {
+    .general-bg;
+    .mixin(@bg-black, @big-size, @bg-hover-black, @color-white, @big-padding);
+  }
+}
+
+
