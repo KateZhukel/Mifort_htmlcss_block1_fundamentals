@@ -19,7 +19,7 @@ body {
     font-family: 'luxi_sansregular';
 }
 
-.menu-item{
+.menu-item, .last-menu-item, .sign-up-item{
     text-decoration: none;
     color: #312D2C;
 }
@@ -45,8 +45,10 @@ a.sign-up-item {
     }
 
 }
-
 .wrapper-flower {
+    height: 800px;
+}
+.flower {
     width: 100%;
     min-height: 600px;
     background: url("images/flower-rental.png");
@@ -100,7 +102,11 @@ a.sign-up-item {
 }
 
 .authorisation-now {
-    padding-left: 80px;
+    padding-left: 60px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .sign-up-item-now {
@@ -113,6 +119,8 @@ a.sign-up-item {
     height: 40px;
     background-color: #312D2C;
     box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
+    font-family: luxi_sansregular;
+    text-decoration: none;
 
 }
 @media (max-width: 1265px) {
@@ -134,7 +142,9 @@ a.sign-up-item {
     .menu-flower {
         padding-left: 0;
     }
-
+    .sign-up-item-now {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 670px) {
