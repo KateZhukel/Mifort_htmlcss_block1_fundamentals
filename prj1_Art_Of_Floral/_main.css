@@ -45,12 +45,10 @@ a.sign-up-item {
     }
 
 }
-.wrapper-flower {
-    height: 800px;
-}
+
 .flower {
     width: 100%;
-    min-height: 600px;
+    min-height: 700px;
     background: url("images/flower-rental.png");
     background-position: center center;
     background-size: cover;
@@ -121,8 +119,43 @@ a.sign-up-item {
     box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
     font-family: luxi_sansregular;
     text-decoration: none;
+}
+
+
+.picture-absolute {
+    background-image: url("images/art-of-floral.png");
+    background-size: cover;
+    position: absolute;
+    top: 570px;
+    left: calc(100% - 700px);
+    width: 470px;
+    height: 300px;
+    display: flex;
 
 }
+.white-border {
+    width: 430px;
+    height: 260px;
+    border: 1px solid white;
+    position: absolute;
+    left: calc(100% - 450px);
+    top: 20px;
+}
+
+.picture-absolute > img {
+    max-width: 100%;
+}
+
+.wrapper-sign-up {
+    background-color: white;
+}
+.part-sign-up {
+    background: url("images/part-sign-up.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 @media (max-width: 1265px) {
     .flower-item {
         font-size: 16px;
@@ -145,6 +178,10 @@ a.sign-up-item {
     .sign-up-item-now {
         justify-content: center;
     }
+    .authorisation-now {
+        justify-content: center;
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 670px) {
@@ -163,6 +200,9 @@ a.sign-up-item {
 
     .name-content {
         font-size: 50px;
+    }
+    .authorisation-now {
+        justify-content: flex-start;
     }
 }
 @media (max-width: 540px) {
