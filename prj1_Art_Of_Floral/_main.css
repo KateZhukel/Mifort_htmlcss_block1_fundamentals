@@ -155,7 +155,7 @@ a.sign-up-item {
     background-position: left 150px;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: 900px 750px;
+    background-size: 950px 800px;
 }
 
 .text-from-left {
@@ -176,16 +176,36 @@ a.sign-up-item {
     max-width: 100%;
 }
 .block {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
-
-
+.list-perfect {
+    width: 370px;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: luxi_sansregular;
+}
+.first-list-perfect > div, .second-list-perfect div {
+    padding: 10px;
+}
 .wrapper-perfect {
     background: url("images/rose.tinted.png");
-    width: 900px;
     justify-content: flex-end;
     height: 650px;
     background-repeat: no-repeat;
+    background-size: 870px 650px;
+    background-position: right top;
+}
+
+.perfect-shadow {
+    background: url("images/Rectangle 3.png");
+    justify-content: flex-end;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 870px 650px;
+    background-position: right top;
+}
+.item-beauty {
+    border: 1px solid #B47E62;
 }
 @media (max-width: 1265px) {
     .flower-item {
