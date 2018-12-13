@@ -146,11 +146,11 @@ a.sign-up-item {
     max-width: 100%;
 }
 
-.wrapper-sign-up {
+.wrapper-content{
     background-color: #ffffff;
     font-size: 18px;
 }
-.part-sign-up {
+.some-parts-content {
     background: url("images/part-sign-up.png");
     background-position: left 150px;
     background-repeat: no-repeat;
@@ -162,8 +162,10 @@ a.sign-up-item {
     text-transform: uppercase;
     margin-right: 20px;
 }
-
-.wrapper-two-block {
+.wrapper-flex-sign {
+    display: flex;
+}
+.wrapper-flex-horizontal {
     display: flex;
     padding-left: 180px;
     margin-right: 60px;
@@ -175,7 +177,9 @@ a.sign-up-item {
 .vector  img {
     max-width: 100%;
 }
-.block {
+.block-vector-text{
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
 }
 .list-perfect {
@@ -188,25 +192,67 @@ a.sign-up-item {
     padding: 10px;
 }
 .wrapper-perfect {
-    background: url("images/rose.tinted.png");
+    background: url("images/perfect.png");
     justify-content: flex-end;
     height: 650px;
     background-repeat: no-repeat;
     background-size: 870px 650px;
     background-position: right top;
+}
+.wrapper-eco {
+    background: url("images/IMG.png");
+    justify-content: flex-end;
+    height: 960px;
+    background-repeat: no-repeat;
+    background-size: 770px 960px;
+    background-position: 85% top;
+}
+.wrapper-products {
+    background: url("images/rose.png");
+    justify-content: flex-end;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: 870px 650px;
+    background-position: left top;
+    margin-top: 150px;
+}
+.wrapper-products-content {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 240px;
+    padding-top: 100px;
+    font-family: nimbus_monoregular;
 }
 
-.perfect-shadow {
+.perfect-gradient {
     background: url("images/Rectangle 3.png");
     justify-content: flex-end;
-    height: 650px;
+    height: 620px;
     background-repeat: no-repeat;
-    background-size: 870px 650px;
+    background-size: 870px 620px;
     background-position: right top;
 }
-.item-beauty {
+.list-perfect {
+    display: flex;
+    margin-left: 250px;
+}
+
+.space-left {
+    padding-left: 180px;
+    padding-bottom: 80px;
+}
+.perfect-item-last {
     border: 1px solid #B47E62;
 }
+.right-flower {
+    background: url("images/Art of Floral Finals-03.png");
+    height: 490px;
+    background-repeat: no-repeat;
+    background-size: 411px 765px;
+    background-position: left center;
+    position: absolute;
+}
+
 @media (max-width: 1265px) {
     .flower-item {
         font-size: 16px;
