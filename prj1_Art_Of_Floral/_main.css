@@ -253,6 +253,124 @@ a.sign-up-item {
     position: absolute;
 }
 
+.wrapper-service {
+    background: url("images/service.png");
+    background-repeat: no-repeat;
+    background-size: 650px;
+    height: 700px;
+    padding-left: 650px;
+    position: absolute;
+}
+
+.service-bg {
+    height: 650px;
+    background-color: #ffffff;
+}
+
+.wrap-testimonials {
+    background-color: #452E2E;
+    height: 650px;
+    color: #ffffff;
+    padding-left: 180px;
+    padding-top: 80px;
+}
+.wrap-testimonials > div:nth-child(3){
+    text-transform: uppercase;
+    padding-left: 360px;
+    font-family: nimbus_monoregular;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+.wrap-testimonials > div:nth-child(1) {
+    font-family: nimbus_monoregular;
+}
+.wrap-flex-test {
+    display: flex;
+    margin-top: 100px;
+    padding-right: 180px;
+    justify-content: space-between;
+}
+.wrap-flex-test > div > img {
+    width: 330px;
+}
+
+.wrap-service-content {
+    display: flex;
+    padding-top: 180px;
+}
+
+.wrap-service-content > div:first-child {
+    width: 750px;
+}
+
+.wrap-service-content >div:nth-child(2) > div:first-child {
+    font-family: nimbus_monoregular;
+}
+
+.wrap-service-content >div:nth-child(2) > div:nth-child(3) {
+    font-family: nimbus_monoregular;
+    font-size: 14px;
+    width: 450px;
+    line-height: 27px;
+    padding-left: 70px;
+    padding-top: 20px;
+
+}
+
+.wrap-service-content > div:nth-child(2) > div:last-child > a {
+    text-decoration: none;
+    border: 1px solid #312D2C;
+    color: #312D2C;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.wrap-service-content > div:nth-child(2) >div:last-child {
+    padding-left: 70px;
+    padding-top: 70px;
+    font-family: luxi_sansregular;
+
+}
+
+.wrap-custom {
+    background: url("images/Art of Floral Finals-06.png");
+    height: 630px;
+    background-repeat: no-repeat;
+    background-position: 96% 163%;
+    position: relative;
+}
+
+.wrapper-logos {
+    margin-left: 180px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-logos div > img {
+    width: 200px;
+}
+
+.padding-text-left {
+    margin-left: 340px;
+}
+
+.footer {
+    height: 500px;
+    background-color: #312D2C;
+}
+
+.wrap-footer {
+    height: 100%;
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+
+.wrap-ul {
+    padding-top: 80px;
+}
+
 @media (max-width: 1265px) {
     .flower-item {
         font-size: 16px;
