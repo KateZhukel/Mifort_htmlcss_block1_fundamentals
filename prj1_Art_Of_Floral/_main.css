@@ -365,11 +365,31 @@ a.sign-up-item {
     display: flex;
     color: #ffffff;
     flex-wrap: wrap;
+    padding-right: 180px;
+    justify-content: space-between;
 }
 
 .wrap-ul {
     padding-top: 80px;
 }
+
+.small-li{
+    font-family: nimbus_monoregular;
+    font-size: 16px;
+    color: #E7DAD1;
+    padding-bottom: 25px;
+}
+
+.wrap-head  {
+    font-family: luxi_sansregular;
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+.wrap-footer-left div, .wrap-footer-right div {
+    width: 34px;
+    margin-bottom: 13px;
+}
+
 
 @media (max-width: 1265px) {
     .flower-item {
