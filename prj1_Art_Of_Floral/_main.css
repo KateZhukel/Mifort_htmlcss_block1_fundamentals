@@ -1,27 +1,30 @@
 body {
     background-color: #E5E5E5;
     color: #312D2C;
+    font-size: 100%;
+    width: 100%;
+    font-family: luxi_sansregular;
 }
 
 .wrapper {
-   max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .header {
     display: flex;
     height: 100px;
-    padding: 0 30px;
+    padding: 0 1.96078431372549%;
     align-items: center;
     justify-content: space-between;
     background-color: #FAFAFA;
     border-bottom: 1px solid #B47E62;
-    font-family: 'luxi_sansregular';
 }
 
 .menu-item, .last-menu-item, .sign-up-item{
     text-decoration: none;
     color: #312D2C;
+    font-size: 1.125em;
 }
 
 .menu-item {
@@ -59,32 +62,32 @@ a.sign-up-item {
     display: flex;
     flex-direction: column;
     padding: 80px 180px 0 180px;
-    font-family: 'nimbus_monoregular';
 }
-
+.text, .menu-flower {
+    font-family: nimbus_monoregular;
+}
 .text{
     width: 346px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.25em;
     letter-spacing: 0.3em;
 }
 
 .name-content {
-    font-family: 'luxi_sansregular';
-    font-size: 80px;
+    font-size: 5em;
     padding: 10px 0 20px 0;
 }
 
 .menu-flower{
     display: flex;
     padding-left: 150px;
+    font-size: 1.125em;
 }
 
 .flower-item{
     text-decoration: none;
     text-transform: uppercase;
     color: #312D2C;
-    font-size: 18px;
     line-height: 18px;
     border-right: 1px solid black;
     padding: 0 15px 0 15px;
@@ -105,11 +108,11 @@ a.sign-up-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: 1.125em;
 }
 
 .sign-up-item-now {
     width: 170px;
-    font-size: 18px;
     color: #ffffff;
     display: inline-flex;
     justify-content: center;
@@ -117,7 +120,6 @@ a.sign-up-item {
     height: 40px;
     background-color: #312D2C;
     box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
-    font-family: luxi_sansregular;
     text-decoration: none;
 }
 
@@ -416,6 +418,7 @@ a.sign-up-item {
     .authorisation-now {
         justify-content: center;
         padding-left: 0;
+        font-size: 1.125em;
     }
 }
 

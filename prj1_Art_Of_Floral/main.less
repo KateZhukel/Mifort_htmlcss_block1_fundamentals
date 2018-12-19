@@ -1,12 +1,78 @@
 @color-font-main: #312D2C;
 @color-border: #B47E62;
 @background-header: #FAFAFA;
+@background-body: #E5E5E5;
 @font-style-sans: 'luxi_sansregular';
 @font-style-mono: 'nimbus_monoregular';
+@font-color-white: #ffffff;
+@shadow-sign: 0px 4px 10px rgba(69, 46, 46, 0.25);
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 body {
-  background-color: @background-header;
+  width: 100%;
+  font: normal 100% @font-style-sans;
+  background-color: @background-body;
   color: @color-font-main;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+// styles for header and inside elements
+.header {
+  .flex-container;
+  align-items: center;
+  height: 100px;
+  padding: 0 1.96078431372549%;
+  background-color: @background-header;
+  border-bottom: 1px solid #B47E62;
+
+  figure {
+    padding: 0;
+    margin: 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .main-menu{
+    .flex-container;
+    flex-wrap: wrap;
+    width: 450px;
+  }
+
+  .main-menu, .wrap-sign {
+
+    a {
+      text-decoration: none;
+      color: @color-font-main;
+      font-size: 1.125em;
+    }
+  }
+
+  .wrap-sign {
+
+    a:last-child {
+      color: @font-color-white;
+      display: inline-flex;
+      justify-content: center;
+      line-height: 40px;
+      width: 110px;
+      height: 40px;
+      background-color: @color-font-main;
+      box-shadow: @shadow-sign;
+    }
+
+    a:first-child {
+      margin-right: 15px;
+    }
+  }
 }
 
 
