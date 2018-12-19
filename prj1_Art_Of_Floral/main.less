@@ -6,6 +6,16 @@
 @font-style-mono: 'nimbus_monoregular';
 @font-color-white: #ffffff;
 @shadow-sign: 0px 4px 10px rgba(69, 46, 46, 0.25);
+@bg-flower-path: "images/flower-rental.png";
+@bg-flower-height: image-height(@bg-flower-path);
+@flower-logo-path: "images/art-of-floral.png";
+@flower-logo-width: image-width(@flower-logo-path);
+@flower-logo-height: image-height(@flower-logo-path);
+@gradient-rectangle: linear-gradient(180deg, rgba(180, 126, 98, 0.5) 13.81%,
+rgba(255, 255, 255, 0) 64.64%, #312D2C 100%);
+
+
+
 
 .flex-container {
   display: flex;
@@ -27,7 +37,7 @@ body {
 .header {
   .flex-container;
   align-items: center;
-  height: 100px;
+  min-height: 100px;
   padding: 0 1.96078431372549%;
   background-color: @background-header;
   border-bottom: 1px solid #B47E62;
@@ -44,7 +54,7 @@ body {
   .main-menu{
     .flex-container;
     flex-wrap: wrap;
-    width: 450px;
+    width: 500px;
   }
 
   .main-menu, .wrap-sign {
@@ -75,4 +85,43 @@ body {
   }
 }
 
+.wrap-flower{
+  height: @bg-flower-height - 211px;
+  background-size: cover;
+  background: url(@bg-flower-path) no-repeat center center;
 
+  .rectangle-left, .rectangle-right {
+      background: @gradient-rectangle;
+      height: 400px;
+      width: 1px;
+      position: absolute;
+      left: 63%;
+    }
+    .rectangle-right {
+      left: 73%;
+    }
+    .flower-logo {
+      background: url(@flower-logo-path) no-repeat;
+      width: @flower-logo-width - 100px;
+      height: @flower-logo-height - 100px;
+      background-size: cover;
+      position: absolute;
+      left: 53%;
+      top: 63%;
+
+      .white-border {
+        width: 430px;
+        height: 260px;
+        border: 1px solid white;
+        position: absolute;
+        left: calc(100% - 450px);
+        top: 20px;
+      }
+    }
+}
+
+main {
+  width: 76%;
+  padding-top: 3%;
+  margin: 0 auto;
+}
