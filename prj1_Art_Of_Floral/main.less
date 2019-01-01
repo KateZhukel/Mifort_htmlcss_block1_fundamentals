@@ -14,12 +14,13 @@
 @gradient-rectangle: linear-gradient(180deg, rgba(180, 126, 98, 0.5) 13.81%,
 rgba(255, 255, 255, 0) 64.64%, #312D2C 100%);
 
-
-
-
-.flex-container {
+.flex-between {
   display: flex;
   justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
 }
 // styles for header and inside elements
 .header {
-  .flex-container;
+  .flex-between;
   align-items: center;
   min-height: 100px;
   padding: 0 1.96078431372549%;
@@ -52,7 +53,7 @@ body {
   }
 
   .main-menu{
-    .flex-container;
+    .flex-between;
     flex-wrap: wrap;
     width: 500px;
   }
@@ -68,7 +69,7 @@ body {
 
   .wrap-sign {
 
-    a:last-child {
+    a:nth-child(2) {
       color: @font-color-white;
       display: inline-flex;
       justify-content: center;
@@ -124,4 +125,58 @@ main {
   width: 76%;
   padding-top: 3%;
   margin: 0 auto;
+
+    .upper-text {
+      font: 1.25em @font-style-mono;
+      text-transform: uppercase;
+      letter-spacing: 0.30em;
+    }
+
+    h1 {
+      font-size: 5em;
+      margin: 0;
+    }
+}
+
+.block-indent {
+  width: 80%;
+  margin: 2% auto;
+
+
+  nav {
+      .flex-center;
+      font: 1.125em @font-style-mono;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: @color-font-main;
+      border-right: 1px solid @color-font-main;
+      padding: 0 10px 0 10px;
+      text-align: center;
+    }
+    a:last-child {
+      border-right: none;
+    }
+}
+
+.wrap-button {
+  width: 85%;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+
+    button {
+      width: 170px;
+      height: 40px;
+      background-color: @color-font-main;
+      color: @font-color-white;
+      text-transform: uppercase;
+      font-size: 1.125em;
+      border: 0;
+      box-shadow: @shadow-sign;
+
+  }
 }
