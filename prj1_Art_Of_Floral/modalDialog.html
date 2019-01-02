@@ -4,68 +4,89 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .modalDialog {
-            position: fixed;
-            font-family: Arial, Helvetica, sans-serif;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: rgba(0,0,0,0.8);
-            z-index: 99999;
-            -webkit-transition: opacity 400ms ease-in;
-            -moz-transition: opacity 400ms ease-in;
-            transition: opacity 400ms ease-in;
-            display: none;
-            pointer-events: none;
-        }
-        .modalDialog:target {
-            display: block;
-            pointer-events: auto;
-        }
+        /*.modalDialog {*/
+            /*position: fixed;*/
+            /*font-family: Arial, Helvetica, sans-serif;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+            /*left: 0;*/
+            /*background: rgba(0,0,0,0.8);*/
+            /*z-index: 99999;*/
+            /*-webkit-transition: opacity 400ms ease-in;*/
+            /*-moz-transition: opacity 400ms ease-in;*/
+            /*transition: opacity 400ms ease-in;*/
+            /*display: none;*/
+            /*pointer-events: none;*/
+        /*}*/
+        /*.modalDialog:target {*/
+            /*display: block;*/
+            /*pointer-events: auto;*/
+        /*}*/
 
-        .modalDialog > div {
-            width: 400px;
-            position: relative;
-            margin: 10% auto;
-            padding: 5px 20px 13px 20px;
-            border-radius: 10px;
-            background: #fff;
-            background: -moz-linear-gradient(#fff, #999);
-            background: -webkit-linear-gradient(#fff, #999);
-            background: -o-linear-gradient(#fff, #999);
+        /*.modalDialog > div {*/
+            /*width: 400px;*/
+            /*position: relative;*/
+            /*margin: 10% auto;*/
+            /*padding: 5px 20px 13px 20px;*/
+            /*border-radius: 10px;*/
+            /*background: #fff;*/
+            /*background: -moz-linear-gradient(#fff, #999);*/
+            /*background: -webkit-linear-gradient(#fff, #999);*/
+            /*background: -o-linear-gradient(#fff, #999);*/
+        /*}*/
+        /*.close {*/
+            /*background: #606061;*/
+            /*color: #FFFFFF;*/
+            /*line-height: 25px;*/
+            /*position: absolute;*/
+            /*right: -12px;*/
+            /*text-align: center;*/
+            /*top: -10px;*/
+            /*width: 24px;*/
+            /*text-decoration: none;*/
+            /*font-weight: bold;*/
+            /*-webkit-border-radius: 12px;*/
+            /*-moz-border-radius: 12px;*/
+            /*border-radius: 12px;*/
+            /*-moz-box-shadow: 1px 1px 3px #000;*/
+            /*-webkit-box-shadow: 1px 1px 3px #000;*/
+            /*box-shadow: 1px 1px 3px #000;*/
+        /*}*/
+
+        /*.close:hover { background: #00d9ff; }*/
+        div {
+            display: flex;
+            justify-content: space-around;
         }
-        .close {
-            background: #606061;
-            color: #FFFFFF;
-            line-height: 25px;
-            position: absolute;
-            right: -12px;
-            text-align: center;
-            top: -10px;
-            width: 24px;
+        a {
             text-decoration: none;
-            font-weight: bold;
-            -webkit-border-radius: 12px;
-            -moz-border-radius: 12px;
-            border-radius: 12px;
-            -moz-box-shadow: 1px 1px 3px #000;
-            -webkit-box-shadow: 1px 1px 3px #000;
-            box-shadow: 1px 1px 3px #000;
+            color: black;
+        }
+        a:after {
+            display: block;
+            content: "";
+            height: 3px;
+            width: 0;
+            background-color: #00b3ff;
+            transition: width 0.4s ease-in-out;
+        }
+        a:hover:after,
+        a:focus:after {
+            width: 100%;
+        }
+        a:hover{
+            color:#225384;
         }
 
-        .close:hover { background: #00d9ff; }
     </style>
 </head>
 <body>
-    <a href="#openModal">SIGN UP</a>
-    <div id="openModal" class="modalDialog">
-            <div>
-                <a href="#close" title="Закрыть" class="close">X</a>
-                <h2>Модальное окно</h2>
-                <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
-                <p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>
-            </div>
-    </div>
+<div>
+    <a href="#">SIGN UP</a>
+    <a href="#">awaearakhkh</a>
+    <a href="#">knnnl</a>
+
+</div>
 </body>
 </html>

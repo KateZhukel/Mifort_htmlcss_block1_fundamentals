@@ -6,6 +6,15 @@
   display: flex;
   justify-content: center;
 }
+.button-sign {
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 110px;
+  background-color: #312D2C;
+  box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
+}
 body {
   width: 100%;
   font: normal 100% 'luxi_sansregular';
@@ -38,24 +47,46 @@ body .wrapper {
   flex-wrap: wrap;
   width: 500px;
 }
+.header .main-menu a:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+  background-color: #B47E62;
+}
+.header .main-menu a:hover:after,
+.header .main-menu a:focus:after {
+  width: 100%;
+}
 .header .main-menu a,
 .header .wrap-sign a {
   text-decoration: none;
   color: #312D2C;
   font-size: 1.125em;
 }
-.header .wrap-sign a:nth-child(2) {
+.header .wrap-sign a:nth-child(3) {
   color: #ffffff;
-  display: inline-flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
   line-height: 40px;
   width: 110px;
-  height: 40px;
   background-color: #312D2C;
   box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
 }
+.header .wrap-sign a:nth-child(3):hover {
+  background-color: #B47E62;
+  transition: 0.3s ease;
+}
+.header .wrap-sign a:nth-child(3):active {
+  transform: scale(0.94);
+}
 .header .wrap-sign a:first-child {
   margin-right: 15px;
+}
+.header .wrap-sign a:first-child:hover {
+  color: #B47E62;
+  transition: 0.2s ease;
 }
 .wrap-flower {
   height: 600px;
@@ -120,6 +151,10 @@ main h1 {
   border-right: 1px solid #312D2C;
   padding: 0 10px 0 10px;
   text-align: center;
+  transition: all 0.2s ease;
+}
+.block-indent a:hover {
+  color: #B47E62;
 }
 .block-indent a:last-child {
   border-right: none;
@@ -140,4 +175,67 @@ main h1 {
   font-size: 1.125em;
   border: 0;
   box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
+}
+.wrap-button button:hover {
+  background-color: #B47E62;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.wrap-button button:active {
+  transform: scale(0.95);
+}
+.modalDialog {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+.modalDialog div {
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(#FFF, #783A36);
+  position: relative;
+  margin: 7% auto;
+  padding: 5px 30px 13px 30px;
+}
+.modalDialog div a.close,
+.modalDialog div a.closeLog {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  background: #783A36;
+  width: 24px;
+  border-radius: 50%;
+  color: #ffffff;
+  right: -26px;
+  top: -9px;
+}
+.modalDialog div a.close:hover,
+.modalDialog div a.closeLog:hover {
+  background: darkolivegreen;
+}
+.modalDialog div a.signUp {
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 110px;
+  background-color: #312D2C;
+  box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
+}
+.modalDialog div form {
+  margin-top: 30px;
+}
+.modalDialog div form input {
+  margin-bottom: 20px;
+  width: 300px;
+}
+.modalDialog:target {
+  pointer-events: auto;
+  display: block;
 }

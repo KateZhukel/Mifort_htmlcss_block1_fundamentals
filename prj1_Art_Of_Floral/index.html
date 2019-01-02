@@ -27,8 +27,38 @@
             <a href="#">Store</a> <!--class="last-menu-item -->
         </nav>
         <div class="wrap-sign"> <!--authorisation -->
-            <a href="#">log in</a> <!-- .menu-item-->
-            <a class="sign-up-item">SIGN UP</a>
+            <a href="#logModal">log in</a> <!-- .menu-item-->
+            <div id="logModal" class="modalDialog">
+                <div>
+                    <a href="#closeLog" title="closeLog" class="closeLog">X</a>
+                    <h2>Log in</h2>
+                    <p>Please fill out the following fields to sign in:</p>
+                    <form action="">
+                        <p><label for="userLog">User name:</label></p>
+                        <input type="text" name="userId" id="userLog">
+                        <p><label for="pswLog">Password:</label></p>
+                        <input type="password" name="psw" id="pswLog">
+                        <a href="#logModal" class="signUp">Log in</a>
+                    </form>
+                </div>
+            </div>
+            <a href="#openModal">SIGN UP</a>
+            <div id="openModal" class="modalDialog signUp">
+                <div>
+                    <a href="#close" title="close" class="close">X</a>
+                    <h2>SIGN UP</h2>
+                    <p>Please fill out the following fields to sign up:</p>
+                    <form action="">
+                        <p><label for="userId">User name:</label></p>
+                        <input type="text" name="userId" id="userId">
+                        <p><label for="psw">Password:</label></p>
+                        <input type="password" name="psw" id="psw">
+                        <p><label for="email">Email:</label></p>
+                        <input type="email" name="email" id="email">
+                        <a href="#openModal" class="signUp">SIGN UP</a>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <!--Finish part Header -->
@@ -52,7 +82,23 @@
                     </nav>
                 </div>
                 <div class="wrap-button">
-                    <button>Sign up now</button>
+                    <a href="#modalNow"><button>Sign up now</button></a>
+                    <div id="modalNow" class="modalDialog signUp">
+                        <div>
+                            <a href="#close" title="close" class="close">X</a>
+                            <h2>SIGN UP</h2>
+                            <p>Please fill out the following fields to sign up:</p>
+                            <form action="">
+                                <p><label for="userNow">User name:</label></p>
+                                <input type="text" name="userId" id="userNow">
+                                <p><label for="pswNow">Password:</label></p>
+                                <input type="password" name="psw" id="pswNow">
+                                <p><label for="emailNow">Email:</label></p>
+                                <input type="email" name="email" id="emailNow">
+                                <a href="#openModal" class="signUp">SIGN UP NOW</a>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </main>
             <!--<div class="content">-->
