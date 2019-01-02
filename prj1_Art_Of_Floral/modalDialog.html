@@ -4,89 +4,106 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        /*.modalDialog {*/
-            /*position: fixed;*/
-            /*font-family: Arial, Helvetica, sans-serif;*/
-            /*top: 0;*/
-            /*right: 0;*/
-            /*bottom: 0;*/
-            /*left: 0;*/
-            /*background: rgba(0,0,0,0.8);*/
-            /*z-index: 99999;*/
-            /*-webkit-transition: opacity 400ms ease-in;*/
-            /*-moz-transition: opacity 400ms ease-in;*/
-            /*transition: opacity 400ms ease-in;*/
-            /*display: none;*/
-            /*pointer-events: none;*/
-        /*}*/
-        /*.modalDialog:target {*/
-            /*display: block;*/
-            /*pointer-events: auto;*/
-        /*}*/
 
-        /*.modalDialog > div {*/
-            /*width: 400px;*/
-            /*position: relative;*/
-            /*margin: 10% auto;*/
-            /*padding: 5px 20px 13px 20px;*/
-            /*border-radius: 10px;*/
-            /*background: #fff;*/
-            /*background: -moz-linear-gradient(#fff, #999);*/
-            /*background: -webkit-linear-gradient(#fff, #999);*/
-            /*background: -o-linear-gradient(#fff, #999);*/
-        /*}*/
-        /*.close {*/
-            /*background: #606061;*/
-            /*color: #FFFFFF;*/
-            /*line-height: 25px;*/
-            /*position: absolute;*/
-            /*right: -12px;*/
+        .wrapper {
+            margin: 200px auto;
+            width: 150px;
+            height: 40px;
+            background-color: #312D2C;
+            position: relative;
+            color: white;
             /*text-align: center;*/
-            /*top: -10px;*/
-            /*width: 24px;*/
-            /*text-decoration: none;*/
-            /*font-weight: bold;*/
-            /*-webkit-border-radius: 12px;*/
-            /*-moz-border-radius: 12px;*/
-            /*border-radius: 12px;*/
-            /*-moz-box-shadow: 1px 1px 3px #000;*/
-            /*-webkit-box-shadow: 1px 1px 3px #000;*/
-            /*box-shadow: 1px 1px 3px #000;*/
-        /*}*/
+        }
+        #check-menu {
+            display: none;
+        }
+        label {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: 2;
+            line-height: 40px;
+        }
 
-        /*.close:hover { background: #00d9ff; }*/
-        div {
-            display: flex;
-            justify-content: space-around;
+        .burger-line {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            width: 35px;
+            height: 2px;
+            background-color: white;
+            transition: 0.5s all;
+
+        }
+        .second, .third {
+            top: 18px;
+        }
+        .fourth {
+            top: 28px;
+        }
+        .main-menu {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            max-height: 0;
+            font-size: 0;
+            overflow: hidden;
+            transition: 0.5s all;
+            text-align: center;
         }
         a {
-            text-decoration: none;
-            color: black;
-        }
-        a:after {
             display: block;
-            content: "";
-            height: 3px;
-            width: 0;
-            background-color: #00b3ff;
-            transition: width 0.4s ease-in-out;
-        }
-        a:hover:after,
-        a:focus:after {
             width: 100%;
-        }
-        a:hover{
-            color:#225384;
+            padding: 10px 0;
+            color: white;
+            text-decoration: none;
+            border-top: 1px solid gray;
+            background-color: #312D2C ;
         }
 
+        #check-menu:checked ~ .main-menu {
+            max-height: 300px;
+            font-size: 16px;
+        }
+
+        #check-menu:checked ~ .first {
+            display: none;
+        }
+        #check-menu:checked ~ .second {
+            transform: rotate(45deg);
+        }
+        #check-menu:checked ~ .third {
+            transform: rotate(-45deg);
+        }
+        #check-menu:checked ~ .fourth {
+            display: none;
+        }
     </style>
 </head>
 <body>
-<div>
-    <a href="#">SIGN UP</a>
-    <a href="#">awaearakhkh</a>
-    <a href="#">knnnl</a>
+    <div class="wrapper">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu">MENU</label>
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line fourth"></div>
+        <nav class="main-menu">
+            <a href="#">Why Us</a>
+            <a href="#">How It Works</a>
+            <a href="#">Rent Pricing</a>
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </nav>
+    </div>
 
-</div>
+
 </body>
 </html>

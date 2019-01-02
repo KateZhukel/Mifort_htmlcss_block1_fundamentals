@@ -56,14 +56,14 @@ body {
     margin: 0;
 
     img {
-      max-width: 100%;
+      max-width: 130%;
     }
   }
 
   .main-menu{
     .flex-between;
     flex-wrap: wrap;
-    width: 500px;
+    width: 45%;
 
     a:after {
       display: block;
@@ -88,16 +88,16 @@ body {
     }
   }
 
-  .wrap-sign {
+  .wrap-sign  {
 
-    a:nth-child(3) {
+    a.signUp {
       .button-sign;
     }
-    a:nth-child(3):hover {
+    a.signUp:hover {
       background-color: @color-border;
       transition: 0.3s ease;
   }
-    a:nth-child(3):active {
+    a.signUp:active {
       transform: scale(0.94);
     }
 
@@ -268,5 +268,129 @@ main {
 .modalDialog:target {
   pointer-events: auto;
   display: block;
+}
+
+.wrap-burger {
+  display: none;
+  width: 250px;
+  height: 40px;
+  background-color: @color-font-main;
+  color: white;
+  position: relative;
+    #check-menu {
+      display: none;
+    }
+    label {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 2;
+      line-height: 40px;
+    }
+    .burger-line {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      width: 35px;
+      height: 2px;
+      background-color: @font-color-white;
+      transition: 0.5s all;
+    }
+  .second, .third {
+    top: 18px;
+  }
+
+  .fourth {
+    top: 28px;
+  }
+  .burger-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+    text-align: center;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      color: @font-color-white;
+      text-decoration: none;
+      border-top: 1px solid black;
+      background-color: @color-font-main;
+    }
+  }
+}
+#check-menu:checked ~ .burger-menu {
+  max-height: 300px;
+  font-size: 12px;
+}
+
+#check-menu:checked ~ .first {
+  display: none;
+}
+#check-menu:checked ~ .second {
+  transform: rotate(45deg);
+}
+#check-menu:checked ~ .third {
+  transform: rotate(-45deg);
+}
+#check-menu:checked ~ .fourth {
+  display: none;
+}
+
+
+
+//media for first part FLOWER RENTAL
+@media (max-width: 1100px) {
+
+  .flower-logo {
+    display: none;
+  }
+  body {
+    font-size: 93%;
+  }
+}
+@media (max-width: 960px) {
+  .header .main-menu a{
+    display: none;
+  }
+  .wrap-burger {
+    display: block;
+  }
+  .wrap-flower .rectangle-left, .wrap-flower .rectangle-right {
+    background: none;
+  }
+  .wrap-sign{
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .block-indent nav {
+    display: block;
+  }
+  .block-indent a {
+    border-right: none;
+    margin: 2% auto;
+  }
+  main h1 {
+    font-size: 4.3em;
+    margin-bottom: 35px;
+  }
+  .wrap-button {
+    width: 100%;
+    align-items: center;
+  }
 }
 
