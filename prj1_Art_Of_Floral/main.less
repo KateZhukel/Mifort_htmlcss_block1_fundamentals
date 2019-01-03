@@ -553,7 +553,6 @@ a {
   .perf-flex {
     display: block;
     font-size: 100%;
-
   }
 
   .part-perfect {
@@ -562,6 +561,49 @@ a {
     .perf-abs {
       opacity: 0.8;
       background-position: center;
+    }
+  }
+}
+.products {
+  padding-top: 80px;
+  .prod-abs {
+    background: url("images/rose.png") no-repeat;
+    height: 650px;
+    background-position: left;
+    background-size: 870px 610px;
+
+    .prod-content {
+      display: flex;
+      padding-right: 12%;
+
+      div:first-child {
+        width: 55%;
+      }
+      div:last-child {
+        width: 45%;
+        margin-top: 80px;
+
+        .upper-text {
+          font: 1.125em @font-style-mono;
+        }
+
+        h2 {
+          font-size: 5em;
+          margin: 0;
+        }
+        .text-indent {
+          text-transform: uppercase;
+          font: 1.125em @font-style-mono;
+          letter-spacing: 0.1em;
+          padding-left: 52%;
+        }
+        .text {
+          font: 0.9em @font-style-mono;
+          line-height: 25px;
+          padding-left: 10%;
+          margin-bottom: 50px;
+        }
+      }
     }
   }
 }

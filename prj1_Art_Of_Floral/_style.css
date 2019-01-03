@@ -510,3 +510,42 @@ a {
     background-position: center;
   }
 }
+.products {
+  padding-top: 80px;
+}
+.products .prod-abs {
+  background: url("images/rose.png") no-repeat;
+  height: 650px;
+  background-position: left;
+  background-size: 870px 610px;
+}
+.products .prod-abs .prod-content {
+  display: flex;
+  padding-right: 12%;
+}
+.products .prod-abs .prod-content div:first-child {
+  width: 55%;
+}
+.products .prod-abs .prod-content div:last-child {
+  width: 45%;
+  margin-top: 80px;
+}
+.products .prod-abs .prod-content div:last-child .upper-text {
+  font: 1.125em 'nimbus_monoregular';
+}
+.products .prod-abs .prod-content div:last-child h2 {
+  font-size: 5em;
+  margin: 0;
+}
+.products .prod-abs .prod-content div:last-child .text-indent {
+  text-transform: uppercase;
+  font: 1.125em 'nimbus_monoregular';
+  letter-spacing: 0.1em;
+  padding-left: 52%;
+}
+.products .prod-abs .prod-content div:last-child .text {
+  font: 0.9em 'nimbus_monoregular';
+  line-height: 25px;
+  padding-left: 10%;
+  margin-bottom: 50px;
+}
