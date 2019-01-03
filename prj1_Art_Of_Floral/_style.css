@@ -549,3 +549,38 @@ a {
   padding-left: 10%;
   margin-bottom: 50px;
 }
+.but-abs {
+  width: 870px;
+  position: relative;
+}
+.but-abs div {
+  right: -21px;
+  position: absolute;
+  top: 10px;
+}
+.but-abs button {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  right: 0;
+}
+@media (max-width: 1100px) {
+  .but-abs button {
+    right: 621px;
+  }
+  .but-abs div {
+    right: 601px;
+  }
+  .products .prod-abs .prod-content div:first-child {
+    width: 14%;
+  }
+  .products .prod-abs .prod-content div:last-child {
+    width: 80%;
+  }
+}
+@media (max-width: 553px) {
+  .products .prod-abs .prod-content div:last-child .text {
+    margin-bottom: 30px;
+    line-height: 16px;
+  }
+}
