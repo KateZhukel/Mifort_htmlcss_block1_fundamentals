@@ -388,7 +388,7 @@ body {
   }
 
   .block-indent nav {
-    display: block;
+    flex-direction: column;
     a {
       border-right: none;
       margin: 2% auto;
@@ -410,15 +410,14 @@ body {
     .wrap-part-two{
       height: 600px;
       width: 100%;
-      box-sizing: border-box;
     }
     .sign-abs {
       background: url("images/part-sign-up.png");
       background-size: cover;
       position: absolute;
       width: 54%;
-      height: 27%;
-      top: 9%;
+      height: 29%;
+      top: 8%;
     }
 }
 
@@ -442,25 +441,27 @@ body {
   .text-indent {
     margin-left: 16%;
     font: 1.125em @font-style-mono;
-    text-transform: uppercase;
-
+    //text-transform: uppercase;
   }
   .indent-flex {
     margin-top: 21px;
-    margin-left: 15px;
+    margin-left: 2%;
   }
   .wrap-column-flex {
     display: flex;
     flex-direction: column;
-    margin-left: 130px;
-    margin-top: 20px;
+    //margin-left: 130px;
+    //margin-top: 20px;
     font: 1.125em @font-style-mono;
+    margin-left: 11%;
+    margin-top: 21px;
+    width: 50%;
 
     .flex-inline {
       display: flex;
-      margin-bottom: 28px;
+      margin-bottom: 5%;
       div {
-        margin-right: 80px;
+        margin-right: 10%;
 
         img {
           width: 57px;
@@ -472,9 +473,95 @@ body {
 .button-part-two {
   .button-sign;
   width: 170px;
+  margin-top: 30px;
 }
 a {
   text-transform: uppercase;
   color: @font-color-white;
   text-decoration: none;
+  font: 1.125em @font-style-sans;
+}
+
+@media (max-width: 960px) {
+  .wrap-all-white .sign-abs {
+    background: none;
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrap-sign-flex {
+    display: block;
+  }
+  .wrap-sign-flex .wrap-column-flex {
+    margin-left: 0;
+    width: 100%;
+  }
+  .indent-flex {
+    img {
+      height: 0;
+    }
+  }
+  .part-two {
+    margin-left: 0;
+  }
+}
+
+.part-perfect {
+  height: 600px;
+  padding-top: 20px;
+  width: 88%;
+  margin-left: 12%;
+    .perf-abs {
+      background: url("images/perfect.png") no-repeat;
+      height: 650px;
+      background-position: right;
+      background-size: 870px 610px;
+    }
+}
+.part-three {
+  padding-top: 70px;
+  .upper-text {
+    font: 1.125em @font-style-mono;
+  }
+  h2 {
+    font-size: 5em;
+    margin: 0;
+  }
+  .big-text{
+    margin-left: 16%;
+    font: 1.125em 'nimbus_monoregular';
+    text-transform: uppercase;
+  }
+}
+.perf-flex{
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  margin-left: 6%;
+  font-size: 1.3em;
+  margin-top: 30px;
+  div {
+    p:hover{
+        cursor: pointer;
+        outline: 1px solid @color-border;
+
+    }
+  }
+}
+@media (max-width: 390px) {
+  .perf-flex {
+    display: block;
+    font-size: 100%;
+
+  }
+
+  .part-perfect {
+    margin: 0;
+    width: 100%;
+    .perf-abs {
+      opacity: 0.8;
+      background-position: center;
+    }
+  }
 }
