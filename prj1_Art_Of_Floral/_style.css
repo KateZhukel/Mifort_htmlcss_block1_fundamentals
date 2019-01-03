@@ -112,6 +112,7 @@ body .wrapper {
   position: absolute;
   left: 53%;
   top: 63%;
+  z-index: 1;
 }
 .wrap-flower .flower-logo .white-border {
   width: 430px;
@@ -121,17 +122,17 @@ body .wrapper {
   left: calc(100% - 450px);
   top: 20px;
 }
-main {
+.first-part {
   width: 76%;
   padding-top: 3%;
   margin: 0 auto;
 }
-main .upper-text {
+.first-part .upper-text {
   font: 1.25em 'nimbus_monoregular';
   text-transform: uppercase;
   letter-spacing: 0.3em;
 }
-main h1 {
+.first-part h1 {
   font-size: 5em;
   margin: 0;
 }
@@ -358,4 +359,79 @@ main h1 {
     width: 100%;
     align-items: center;
   }
+}
+.wrap-all-white {
+  height: 2400px;
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 3%;
+}
+.wrap-all-white .wrap-part-two {
+  height: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrap-all-white .sign-abs {
+  background: url("images/part-sign-up.png");
+  background-size: cover;
+  position: absolute;
+  width: 54%;
+  height: 27%;
+  top: 9%;
+}
+.part-two {
+  width: 88%;
+  margin-left: 12%;
+}
+.part-two .upper-text {
+  font: 1.125em 'nimbus_monoregular';
+  letter-spacing: 0.1em;
+}
+.part-two h2 {
+  font-size: 5em;
+  margin: 0;
+}
+.wrap-sign-flex {
+  display: flex;
+}
+.wrap-sign-flex .text-indent {
+  margin-left: 16%;
+  font: 1.125em 'nimbus_monoregular';
+  text-transform: uppercase;
+}
+.wrap-sign-flex .indent-flex {
+  margin-top: 21px;
+  margin-left: 15px;
+}
+.wrap-sign-flex .wrap-column-flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+  margin-top: 20px;
+  font: 1.125em 'nimbus_monoregular';
+}
+.wrap-sign-flex .wrap-column-flex .flex-inline {
+  display: flex;
+  margin-bottom: 28px;
+}
+.wrap-sign-flex .wrap-column-flex .flex-inline div {
+  margin-right: 80px;
+}
+.wrap-sign-flex .wrap-column-flex .flex-inline div img {
+  width: 57px;
+}
+.button-part-two {
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 110px;
+  background-color: #312D2C;
+  box-shadow: 0px 4px 10px rgba(69, 46, 46, 0.25);
+  width: 170px;
+}
+a {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
 }

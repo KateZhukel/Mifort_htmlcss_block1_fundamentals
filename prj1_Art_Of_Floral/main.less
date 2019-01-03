@@ -134,6 +134,7 @@ body {
       position: absolute;
       left: 53%;
       top: 63%;
+      z-index: 1;
 
       .white-border {
         width: 430px;
@@ -146,7 +147,7 @@ body {
     }
 }
 
-main {
+.first-part {
   width: 76%;
   padding-top: 3%;
   margin: 0 auto;
@@ -399,4 +400,81 @@ main {
     align-items: center;
   }
 }
+}
+// first part finished
+.wrap-all-white {
+  height: 2400px;
+  position: relative;
+  background-color: @font-color-white;
+  padding-top: 3%;
+    .wrap-part-two{
+      height: 600px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .sign-abs {
+      background: url("images/part-sign-up.png");
+      background-size: cover;
+      position: absolute;
+      width: 54%;
+      height: 27%;
+      top: 9%;
+    }
+}
+
+.part-two {
+  width: 88%;
+  margin-left: 12%;
+    .upper-text {
+      font: 1.125em @font-style-mono;
+      letter-spacing: 0.1em;
+    }
+    h2 {
+      font-size: 5em;
+      margin: 0;
+    }
+
+}
+
+.wrap-sign-flex {
+  display: flex;
+
+  .text-indent {
+    margin-left: 16%;
+    font: 1.125em @font-style-mono;
+    text-transform: uppercase;
+
+  }
+  .indent-flex {
+    margin-top: 21px;
+    margin-left: 15px;
+  }
+  .wrap-column-flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    margin-top: 20px;
+    font: 1.125em @font-style-mono;
+
+    .flex-inline {
+      display: flex;
+      margin-bottom: 28px;
+      div {
+        margin-right: 80px;
+
+        img {
+          width: 57px;
+        }
+      }
+    }
+  }
+}
+.button-part-two {
+  .button-sign;
+  width: 170px;
+}
+a {
+  text-transform: uppercase;
+  color: @font-color-white;
+  text-decoration: none;
 }
