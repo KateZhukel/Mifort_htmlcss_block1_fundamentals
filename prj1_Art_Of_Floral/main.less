@@ -1,6 +1,7 @@
 @color-font-main: #312D2C;
 @color-border: #B47E62;
 @background-header: #FAFAFA;
+@bg-benefits: #783A36;
 @background-body: #E5E5E5;
 @font-style-sans: 'luxi_sansregular';
 @font-style-mono: 'nimbus_monoregular';
@@ -133,7 +134,7 @@ body {
       background-size: cover;
       position: absolute;
       left: 53%;
-      top: 63%;
+      top: 66%;
       z-index: 1;
 
       .white-border {
@@ -407,6 +408,7 @@ body {
   position: relative;
   background-color: @font-color-white;
   padding-top: 3%;
+  padding-bottom: 100px;
     .wrap-part-two{
       height: 600px;
       width: 100%;
@@ -415,9 +417,9 @@ body {
       background: url("images/part-sign-up.png");
       background-size: cover;
       position: absolute;
-      width: 54%;
-      height: 29%;
-      top: 8%;
+      width: 48%;
+      height: 23%;
+      top: 6%;
     }
 }
 
@@ -665,10 +667,19 @@ a {
       background-position: right;
       margin-right: 2%;
 
+      .rose-abs{
+        position: absolute;
+        left: 0;
+        top: 86%;
+        .rose-abs-img {
+          width: 380px;
+        }
+      }
       main {
         width: 76%;
         margin: 0 auto;
         padding-top: 60px;
+
         .little-text{
           font-size: 1.125em;
         }
@@ -711,6 +722,7 @@ a {
         .button:hover {
           cursor: pointer;
         }
+
       }
     }
 }
@@ -726,5 +738,52 @@ a {
   .eco-flowers .eco-abs {
     background-position: left;
     margin-right: 0;
+  }
+}
+.benefits {
+  background-color: @bg-benefits;
+  padding: 80px 0 50px 0;
+  width: 100%;
+  color: @font-color-white;
+  .benefits-flex{
+    width: 88%;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+    div {
+      p:first-child {
+        font: 1.125em @font-style-mono;
+      }
+      h2 {
+        font-size: 5em;
+        margin: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+      }
+      p:nth-child(3), p:nth-child(4), p:nth-child(5){
+        padding-left: 5%;
+        font-size: 1.33333em;
+        letter-spacing: 1px;
+        line-height: 36px;
+      }
+      .but-benefits {
+        //padding-left: 5%;
+        margin-top: 50px;
+        position: relative;
+        width: 137px;
+        button {
+          border: 1px solid @font-color-white;
+          color: @font-color-white;
+          background-color: @bg-benefits;
+          box-shadow: none;
+          padding: 10px;
+        }
+        img {
+          position: absolute;
+          top: 15px;
+          left: 137px;
+        }
+      }
+    }
   }
 }

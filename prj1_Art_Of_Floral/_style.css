@@ -111,7 +111,7 @@ body .wrapper {
   background-size: cover;
   position: absolute;
   left: 53%;
-  top: 63%;
+  top: 66%;
   z-index: 1;
 }
 .wrap-flower .flower-logo .white-border {
@@ -364,6 +364,7 @@ body .wrapper {
   position: relative;
   background-color: #ffffff;
   padding-top: 3%;
+  padding-bottom: 100px;
 }
 .wrap-all-white .wrap-part-two {
   height: 600px;
@@ -373,9 +374,9 @@ body .wrapper {
   background: url("images/part-sign-up.png");
   background-size: cover;
   position: absolute;
-  width: 54%;
-  height: 29%;
-  top: 8%;
+  width: 48%;
+  height: 23%;
+  top: 6%;
 }
 .part-two {
   width: 88%;
@@ -602,6 +603,14 @@ a {
   background-position: right;
   margin-right: 2%;
 }
+.eco-flowers .eco-abs .rose-abs {
+  position: absolute;
+  left: 0;
+  top: 86%;
+}
+.eco-flowers .eco-abs .rose-abs .rose-abs-img {
+  width: 380px;
+}
 .eco-flowers .eco-abs main {
   width: 76%;
   margin: 0 auto;
@@ -661,4 +670,50 @@ a {
     background-position: left;
     margin-right: 0;
   }
+}
+.benefits {
+  background-color: #783A36;
+  padding: 80px 0 50px 0;
+  width: 100%;
+  color: #ffffff;
+}
+.benefits .benefits-flex {
+  width: 88%;
+  margin-left: 12%;
+  display: flex;
+  flex-direction: row;
+}
+.benefits .benefits-flex div p:first-child {
+  font: 1.125em 'nimbus_monoregular';
+}
+.benefits .benefits-flex div h2 {
+  font-size: 5em;
+  margin: 0;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+.benefits .benefits-flex div p:nth-child(3),
+.benefits .benefits-flex div p:nth-child(4),
+.benefits .benefits-flex div p:nth-child(5) {
+  padding-left: 5%;
+  font-size: 1.33333em;
+  letter-spacing: 1px;
+  line-height: 36px;
+}
+.benefits .benefits-flex div .but-benefits {
+  margin-top: 50px;
+  position: relative;
+  width: 137px;
+}
+.benefits .benefits-flex div .but-benefits button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #783A36;
+  box-shadow: none;
+  padding: 10px;
+}
+.benefits .benefits-flex div .but-benefits img {
+  position: absolute;
+  top: 15px;
+  left: 137px;
 }

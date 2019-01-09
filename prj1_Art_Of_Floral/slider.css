@@ -1,0 +1,75 @@
+.slider-wrap {
+    width: 430px;
+    height: 430px;
+    margin: 50px auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.slider-wrap > input {
+    display: none;
+}
+.slider {
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #E7DAD1;
+}
+.slides {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    transform: rotate(55deg);
+    transition: 1s;
+
+}
+.img1 {background-image: url("images/image_560209131103011605573.jpg");}
+.img2 {background-image: url("images/o.jpg");}
+.img3 {background-image: url("images/3.jpg"); }
+.img4 {background-image: url("images/rose.tinted.png");}
+.img5 {background-image: url("images/5.jpg");}
+
+.slider-wrap .control {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.slider-wrap label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 5px;
+    position: relative;
+    width: 8px;
+    border-radius: 50%;
+}
+.slider-wrap label:after {
+    content: " ";
+    border: 1px solid #B47E62;
+    display: block;
+    height: 6px;
+    border-radius: 50%;
+    top: -4px;
+    width: 6px;
+}
+#point1:checked ~ .control label:nth-child(1),
+#point2:checked ~ .control label:nth-child(2),
+#point3:checked ~ .control label:nth-child(3),
+#point4:checked ~ .control label:nth-child(4),
+#point5:checked ~ .control label:nth-child(5) {
+    background: #E7DAD1;
+}
+
+#point1:checked ~ .slider > .img1,
+#point2:checked ~ .slider > .img2,
+#point3:checked ~ .slider > .img3,
+#point4:checked ~ .slider > .img4,
+#point5:checked ~ .slider > .img5 {
+    opacity: 1;
+    z-index: 1;
+    transform: none;
+}
