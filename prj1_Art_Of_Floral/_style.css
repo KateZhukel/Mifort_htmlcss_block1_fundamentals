@@ -111,7 +111,7 @@ body .wrapper {
   background-size: cover;
   position: absolute;
   left: 53%;
-  top: 66%;
+  top: 61%;
   z-index: 1;
 }
 .wrap-flower .flower-logo .white-border {
@@ -683,37 +683,124 @@ a {
   display: flex;
   flex-direction: row;
 }
-.benefits .benefits-flex div p:first-child {
+.benefits .benefits-flex .main-benefits {
+  width: 410px;
+  min-height: 500px;
+}
+.benefits .benefits-flex .main-benefits p:first-child {
   font: 1.125em 'nimbus_monoregular';
 }
-.benefits .benefits-flex div h2 {
+.benefits .benefits-flex .main-benefits h2 {
   font-size: 5em;
   margin: 0;
   margin-bottom: 50px;
   letter-spacing: 2px;
 }
-.benefits .benefits-flex div p:nth-child(3),
-.benefits .benefits-flex div p:nth-child(4),
-.benefits .benefits-flex div p:nth-child(5) {
+.benefits .benefits-flex .main-benefits p:nth-child(3),
+.benefits .benefits-flex .main-benefits p:nth-child(4),
+.benefits .benefits-flex .main-benefits p:nth-child(5) {
   padding-left: 5%;
   font-size: 1.33333em;
   letter-spacing: 1px;
   line-height: 36px;
 }
-.benefits .benefits-flex div .but-benefits {
+.benefits .benefits-flex .main-benefits .but-benefits {
   margin-top: 50px;
   position: relative;
   width: 137px;
 }
-.benefits .benefits-flex div .but-benefits button {
+.benefits .benefits-flex .main-benefits .but-benefits button {
   border: 1px solid #ffffff;
   color: #ffffff;
   background-color: #783A36;
   box-shadow: none;
   padding: 10px;
 }
-.benefits .benefits-flex div .but-benefits img {
+.benefits .benefits-flex .main-benefits .but-benefits img {
   position: absolute;
   top: 15px;
   left: 137px;
+}
+@media (max-width: 1190px) {
+  .benefits-flex .slider-wrap {
+    height: 330px;
+    width: 330px;
+  }
+  .benefits .benefits-flex .main-benefits {
+    width: 239px;
+  }
+}
+@media (max-width: 955px) {
+  .benefits-flex .slider-wrap {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .eco-flowers .eco-abs .rose-abs .rose-abs-img {
+    width: 310px;
+  }
+}
+.service {
+  width: 100%;
+  background: #ffffff;
+  min-height: 600px;
+}
+.service .service-flex {
+  display: flex;
+}
+.service .service-flex .serv-img {
+  width: 580px;
+}
+.service .service-flex .serv-img img {
+  position: absolute;
+  width: 40%;
+}
+.service .service-flex .main-service {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+  padding-top: 10%;
+}
+.service .service-flex .main-service p:first-child {
+  font: 1.125em 'nimbus_monoregular';
+}
+.service .service-flex .main-service h2 {
+  font-size: 5em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.service .service-flex .main-service .katya {
+  font: 1em 'nimbus_monoregular';
+  width: 450px;
+  align-self: flex-end;
+  padding-bottom: 30px;
+  padding-left: 8%;
+}
+.service .service-flex .main-service div:last-child {
+  margin-left: 10%;
+  width: 120px;
+  height: 40px;
+  position: relative;
+}
+.service .service-flex .main-service div:last-child button {
+  width: 100px;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: 1px solid black;
+}
+.service .service-flex .main-service div:last-child img {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+@media (max-width: 1030px) {
+  .service .service-flex .main-service .katya {
+    width: 300px;
+    padding-left: 0;
+  }
+  .service .service-flex .main-service div:last-child {
+    margin-left: 0;
+  }
 }

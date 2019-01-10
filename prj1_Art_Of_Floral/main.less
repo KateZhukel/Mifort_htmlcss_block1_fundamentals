@@ -134,7 +134,7 @@ body {
       background-size: cover;
       position: absolute;
       left: 53%;
-      top: 66%;
+      top: 61%;
       z-index: 1;
 
       .white-border {
@@ -750,7 +750,9 @@ a {
     margin-left: 12%;
     display: flex;
     flex-direction: row;
-    div {
+    .main-benefits{
+      width: 410px;
+      min-height: 500px;
       p:first-child {
         font: 1.125em @font-style-mono;
       }
@@ -785,5 +787,94 @@ a {
         }
       }
     }
+  }
+}
+@media (max-width: 1190px) {
+  .benefits-flex .slider-wrap {
+    height: 330px;
+    width: 330px;
+
+  }
+  .benefits .benefits-flex .main-benefits {
+    width: 239px;
+  }
+}
+@media (max-width: 955px) {
+  .benefits-flex .slider-wrap {
+    display: none;
+  }
+}
+@media(max-width: 800px) {
+  .eco-flowers .eco-abs .rose-abs .rose-abs-img
+  {
+    width: 310px;
+  }
+}
+
+.service {
+  width: 100%;
+  background: @font-color-white;
+  min-height: 600px;
+  .service-flex {
+    display: flex;
+    .serv-img {
+      width: 580px;
+      img {
+        position: absolute;
+        width: 40%;
+      }
+    }
+      .main-service {
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 8%;
+        padding-top: 10%;
+
+        p:first-child {
+          font: 1.125em @font-style-mono;
+        }
+        h2 {
+          font-size: 5em;
+          margin: 0;
+          letter-spacing: 2px;
+        }
+        .katya {
+          font: 1em @font-style-mono;
+          width: 450px;
+          align-self: flex-end;
+          padding-bottom: 30px;
+          padding-left:8%;
+        }
+        div:last-child {
+          margin-left: 10%;
+          width: 120px;
+          height: 40px;
+          position: relative;
+          button{
+            width: 100px;
+            height: 40px;
+            background-color: #ffffff;
+            box-shadow: none;
+            border: 1px solid black;
+          }
+          img {
+            position: absolute;
+            right: 0;
+            top: 45%;
+
+          }
+        }
+      }
+      }
+    }
+
+@media (max-width: 1030px) {
+  .service .service-flex .main-service .katya {
+    width: 300px;
+    padding-left: 0;
+  }
+  .service .service-flex .main-service div:last-child {
+    margin-left: 0;
   }
 }
