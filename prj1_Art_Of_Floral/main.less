@@ -878,3 +878,77 @@ a {
     margin-left: 0;
   }
 }
+@media (max-width: 700px) {
+  .service .service-flex .main-service {
+    padding-top: 45%;
+  }
+
+}
+
+
+.testimonals {
+  background-color: #452E2E;
+  //min-height: 700px;
+
+  .content-test {
+    width: 78%;
+    padding-left: 12%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: @font-color-white;
+    p:first-child {
+      font: 1.125em @font-style-mono;
+    }
+    h2{
+      font-size: 5em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .tp{
+      font: 1.125em @font-style-mono;
+      text-transform: uppercase;
+      padding-left: 30%;
+    }
+    .response {
+      display: flex;
+      justify-content: space-between;
+      font-family: @font-style-mono;
+      margin-top: 50px;
+      .response-border {
+        position: relative;
+        box-sizing: border-box;
+        width: 32%;
+        min-height: 210px;
+        padding: 20px;
+        border: 1px solid #783A36;
+      }
+    }
+  }
+}
+.comma {
+  position: absolute;
+  top: -16px;
+}
+.stars {
+  position: absolute;
+  bottom: -17px;
+  right: 16px;
+}
+@media(max-width: 562px) {
+  .testimonals .content-test .response {
+    flex-direction: column;
+  }
+
+  .testimonals .content-test .response .response-border {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .testimonals .content-test h2 {
+    font-size: 3em;
+  }
+  .testimonals .content-test .response .response-border:last-child {
+    display: none;
+  }
+}
