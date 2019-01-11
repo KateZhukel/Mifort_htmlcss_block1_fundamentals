@@ -1,0 +1,118 @@
+h1, p, h2, h3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.wrap_size {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.header {
+    background: url("images/img-header.png")right/cover no-repeat ;
+    height: 125px;
+}
+.container{
+    justify-content: center;
+    color: #ffffff;
+    margin-left: 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text_margin {
+    margin-top: 10px;
+}
+.main {
+    width: 100%;
+    background-color: #ffffff;
+}
+.main-beh {
+    display: flex;
+    flex-direction: column;
+
+}
+.main__flex-line {
+    display: flex;
+    flex-direction: row;
+    min-height: 190px;
+}
+
+.main__flex-elem {
+    width: 25%;
+    box-sizing: border-box;
+}
+.main__flex-elem > img {
+    max-width: 100%;
+    display: block;
+}
+/*.bg_image{*/
+    /*width: 290px;*/
+/*}*/
+
+.cell_text{
+    width: 50%;
+    padding: 30px 30px 30px 8%;
+}
+
+.bg_cell{
+    background: #eeeeee;
+    padding: 30px;
+}
+.main__link {
+    font-size: 11px;
+}
+.main__text {
+  font-size: 14px;
+}
+.text_small {
+    font-size: 11px;
+}
+.main__title {
+    margin-bottom: 15px;
+}
+/*@media (max-width: 1253px) {*/
+    /*.line_one {*/
+        /*padding-left: 10px;*/
+    /*}*/
+    /*.bg_cell {*/
+        /*padding: 1%;*/
+    /*}*/
+    /*.cell_text {*/
+        /*padding: 1%;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 935px) {*/
+
+/*}*/
+.bg-image3 {
+    background: url("images/total2.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg-image3 > img {
+    position: absolute;
+    width: 140px;
+    right: 5px;
+    top: 5px;
+}
+.bg_image1{
+    background: url("images/unil.png");
+    background-size: cover;
+    background-position: center;
+}
+.bg-image2 {
+    background: url("images/ardeca-img1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg-image2 > img {
+    position: absolute;
+    width: 140px;
+    left: 10px;
+    bottom: 5px;
+}
