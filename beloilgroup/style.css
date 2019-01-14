@@ -48,7 +48,7 @@ h1, p, h2, h3 {
     display: block;
 }
 /*.bg_image{*/
-    /*width: 290px;*/
+/*width: 290px;*/
 /*}*/
 
 .cell_text{
@@ -64,7 +64,7 @@ h1, p, h2, h3 {
     font-size: 11px;
 }
 .main__text {
-  font-size: 14px;
+    font-size: 14px;
 }
 .text_small {
     font-size: 11px;
