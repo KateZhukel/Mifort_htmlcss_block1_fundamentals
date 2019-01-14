@@ -36,7 +36,6 @@ h1, p, h2, h3 {
 .main__flex-line {
     display: flex;
     flex-direction: row;
-    min-height: 190px;
 }
 
 .main__flex-elem {
@@ -46,11 +45,8 @@ h1, p, h2, h3 {
 .main__flex-elem > img {
     max-width: 100%;
     display: block;
-}
-/*.bg_image{*/
-/*width: 290px;*/
-/*}*/
 
+}
 .cell_text{
     width: 50%;
     padding: 30px 30px 30px 8%;
@@ -60,6 +56,8 @@ h1, p, h2, h3 {
     background: #eeeeee;
     padding: 30px;
 }
+
+
 .main__link {
     font-size: 11px;
 }
@@ -72,34 +70,35 @@ h1, p, h2, h3 {
 .main__title {
     margin-bottom: 15px;
 }
-.bg-image3 {
+.bg_image3 {
     /*background: url("images/total2.png");*/
-    background-size: cover;
-    background-position: center;
+    /*background-size: cover;*/
+    /*background-position: center;*/
     position: relative;
 }
-.bg-image3 > img {
+.bg_image3 > img:nth-child(2) {
     position: absolute;
     width: 140px;
     right: 5px;
     top: 5px;
 }
-.bg_image1{
-    background: url("images/unil.png");
-    background-size: cover;
-    background-position: center;
-}
-.bg-image2 {
-    background: url("images/ardeca-img1.png");
-    background-size: cover;
-    background-position: center;
+
+/*.bg_image1{*/
+    /*!*background: url("images/unil.png");*!*/
+    /*!*background-size: cover;*!*/
+    /*!*background-position: center;*!*/
+/*}*/
+.bg_image2 {
     position: relative;
 }
-.bg-image2 > img {
+.bg_image2 > img:nth-child(2) {
     position: absolute;
     width: 140px;
     left: 10px;
     bottom: 5px;
+}
+.cell_top {
+    display: none;
 }
 @media (max-width: 1120px) {
     .main__flex-line {
@@ -109,4 +108,53 @@ h1, p, h2, h3 {
         width: 100%;
     }
 
+    .main__flex-elem > img {
+        width: 557px;
+    }
+    .bg_image1 {
+        width: 50%;
+    }
+    .bg_image2 {
+        width: 50%;
+    }
+    .bg_image3  {
+        width: 50%;
+    }
+    .bg_cell1{
+        display: none;
+    }
+    .bg_cell2 {
+        width: 50%;
+        display: block;
+    }
+    .bg_cell {
+        width: 50%;
+    }
+
+}
+@media (max-width: 550px) {
+    .bg_image1, .bg_image2, .bg_image3, .bg_cell {
+        width: 80%;
+    }
+    .bg_image1, .bg_image2, .bg_image3 {
+        margin-bottom: 20px;
+    }
+    .main__flex-line {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cell_none {
+        display: none;
+    }
+    .cell_top {
+        display: block;
+    }
+    .par_center {
+        text-align: center;
+    }
+}
+footer {
+    background: #00344f;
+    height: 90px;
+    width: 100%;
 }
