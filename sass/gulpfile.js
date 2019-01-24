@@ -22,8 +22,15 @@ gulp.task('html', function () {
     return gulp.src('*.html')
         .pipe(gulp.dest('build'))
         .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('directories', function () {
+    return gulp.src('*.*', {read: false})
+        .pipe(gulp.dest('./img/content'))
 
 });
+
+
 
 gulp.task('serve', function(){
     browserSync.init({
