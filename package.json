@@ -1,19 +1,29 @@
 {
-  "name": "fundamentals_forms",
+  "name": "beloilgroup",
   "version": "1.0.0",
-  "description": "",
+  "description": "using of sass, gulp, flex",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals.git"
+    "url": "git+https://github.com/KateZhukel/Beloilgroup.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals/issues"
+    "url": "https://github.com/KateZhukel/Beloilgroup/issues"
   },
-  "homepage": "https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals#readme"
+  "homepage": "https://github.com/KateZhukel/Beloilgroup#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {}
 }
