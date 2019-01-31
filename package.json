@@ -1,19 +1,22 @@
 {
-  "name": "fundamentals_forms",
+  "name": "simple-gulp-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple Gulp Start Template (Sass, Browsersync, Uglify, cleanCSS, Autoprefixer)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals.git"
-  },
-  "author": "",
+  "author": "WebDesign-Master.ru",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals/issues"
-  },
-  "homepage": "https://github.com/KateZhukel/Mifort_htmlcss_block1_fundamentals#readme"
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  }
 }
