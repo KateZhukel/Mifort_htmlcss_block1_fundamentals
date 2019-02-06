@@ -1,6 +1,7 @@
-var location1 = 3; //хранение позиции клетки корабля
-var location2 = 4;
-var location3 =5;
+var randomLoc = Math.floor(Math.random()*5);
+var location1 = randomLoc; //хранение позиции клетки корабля
+var location2 = location1 + 1;
+var location3 = location2 + 1;
 
 // перемненная для номера текущей попытки
 var guess; // undefined
